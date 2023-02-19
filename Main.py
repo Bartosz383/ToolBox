@@ -1,16 +1,9 @@
 from PyPDF2 import PdfMerger
 import os
+from PDFmodule import PDF
 
-pdf_files = ['1.pdf', '2.pdf', '3.pdf']
+if __name__ == '__main__':
 
-pdf_merger = PdfMerger()
-
-for pdf in pdf_files:
-    pdf_merger.append(pdf)
-
-pdf_merger.write('merger2.pdf')
-pdf_merger.close()
-
-# delete files
-for pdf in pdf_files:
-    os.remove(pdf)
+    instancePDF = PDF(['merged_file.pdf', 'merger.pdf', 'merger2.pdf'])
+    instancePDF.joinPDF()
+    instancePDF.deleteInputPDFFiles()
