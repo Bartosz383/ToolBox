@@ -12,7 +12,7 @@ class PDF():
         for pdf in self.pdf_files:
             pdf_merger.append(pdf)
 
-        pdf_merger.write('okurwa3.pdf')
+        pdf_merger.write('okurwa6.pdf')
         pdf_merger.close()
 
     def deleteInputPDFFiles(self):
