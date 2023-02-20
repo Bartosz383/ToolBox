@@ -1,10 +1,8 @@
 from PyPDF2 import PdfMerger
 import os
-
 class PDF():
     def __init__(self, pdf_files):
         self.pdf_files = pdf_files
-
     def joinPDF(self):
 
         pdf_merger = PdfMerger()

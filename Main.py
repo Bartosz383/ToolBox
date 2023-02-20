@@ -1,9 +1,10 @@
 from PDFmodule import PDF
 from MathExcerciseForFun import MathExcerciseRandomizer
 from Exit import ExitEscape
+import os
 
 def main():
-    instancePDF = PDF(['okurwa3.pdf', 'okurwa4.pdf', 'okurwa5.pdf'])
+    instancePDF = PDF(['1.pdf', '2.pdf', '3.pdf'])
     instanceMathExcercise = MathExcerciseRandomizer()
     instanceExit = ExitEscape()
 
