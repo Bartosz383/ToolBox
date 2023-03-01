@@ -1,12 +1,14 @@
 from PDFmodule import PDF
 from MathExcerciseForFun import MathExcerciseRandomizer
 from Exit import ExitEscape
-import os
+from TextGame import StartTextGame
+
 
 def main():
     instancePDF = PDF(['1.pdf', '2.pdf', '3.pdf'])
     instanceMathExcercise = MathExcerciseRandomizer()
     instanceExit = ExitEscape()
+    instanceTextGame = StartTextGame()
 
     main_menu = {
         "1": {"Description": "Join PDF", "Function": instancePDF.joinPDF},
@@ -17,6 +19,7 @@ def main():
         "6": {"Description": "Multiply two numbers", "Function": instanceMathExcercise.Multiplication},
         "7": {"Description": "Divide two numbers", "Function": instanceMathExcercise.Division},
         "8": {"Description": "Raise the numbers to a power", "Function": instanceMathExcercise.Powering},
+        "9": {"Description": "Open TextGame", "Function": instanceTextGame.intro},
         "0": {"Description": "Program exit", "Function": instanceExit}
     }
 
